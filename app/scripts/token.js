@@ -1,1 +1,1 @@
-module.exports = {'token':'2d5572625fed7e59f5958b9f55f1bba3939a5710'};
+module.exports = {'token':'ac56bee577018d3a731427f8881aa305d3eb6c83'};
