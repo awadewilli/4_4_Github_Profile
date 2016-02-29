@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4_4_Github_Profile</title>
+    <link rel="stylesheet" href="fonts/octicons/octicons.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+<div class="header-background">
+</div>
+<div class="container">
+  <header class="row">
+    <div class="col-md-8">
+      <div class="form-wrapper">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" role="img" version="1.1" viewbox="0 0 16 16" width="28">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z">
+          </path>
+        </svg>
+        <form>
+          <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search Github">
+          </div>
+        </form>
+        <ul class="nav-bar">
+          <a href="#"><li>Pull Requests</li></a>
+          <a href="#"><li>Issues</li></a>
+          <a href="#"><li>Gist</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 header-right">
+      <ul>
+        <li class="dropdown">
+        <span aria-hidden="true" class="octicon octicon-plus" height="16" role="img" version="1.1" viewbox="0 0 12 16" width="12">
+          <span class="dropdown-caret"></span>
+        </span>
+        </li>
+        <li id="thumbnail_pic" class="dropdown">
+          <a>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="row main-content">
+    <div class="col-md-3 profile-info">
+    </div>
+    <div class="col-md-9">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active" id="collab-tab"><a href="#">
+          <span aria-hidden="true" class="octicon octicon-diff-added" height="16" role="img" version="1.1" viewbox="0 0 14 16" width="14">
+          </span>
+          Contributions</a></li>
+        <li role="presentation" id="repo-tab"><a href="#">
+          <span aria-hidden="true" class="octicon octicon-repo" height="16" role="img" version="1.1" viewbox="0 0 12 16" width="12">
+          </span>
+          Repositories</a></li>
+        <li role="presentation" id="pub-tab"><a href="#">
+          <span aria-hidden="true" class="octicon octicon-rss" height="16" role="img" version="1.1" viewbox="0 0 10 16" width="10">
+        </span>
+          Public Activities</a></li>
+        <li class="profile-edit">
+          <span aria-hidden="true" class="octicon octicon-pencil" height="16" role="img" version="1.1" viewbox="0 0 14 16" width="14">
+          </span>
+          <span>Edit Profile</span>
+        </li>
+      </ul>
+      <div class="row">
+      <div class="col-md-12 repo-nav">
+        <div class="col-md-6 bottom-border repo-search">
+          <div class="form-wrapper">
+            <form>
+              <div class="input-wrapper">
+                <input placeholder="Find a repository...">
+              </div>
+              <div class="button-wrapper">
+                <button class="btn btn-primary" type="submit" value="search">
+                 Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 bottom-border repo_filter_nav_items">
+          <ul class="repo-nav-items">
+            <li class="ml-3"><a href="#" class="repo_filter">All</a></li>
+            <li class="ml-3"><a href="#" class="repo_filter">Public</a></li>
+            <li class="ml-3"><a href="#" class="repo_filter">Private</a></li>
+            <li class="ml-3"><a href="#" class="repo_filter">Sources</a></li>
+            <li class="ml-3"><a href="#" class="repo_filter">Forks</a></li>
+            <li class="ml-3"><a href="#" class="repo_filter">Mirrors</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="row repo-list">
+        <div class="col-md-12">
+          <div class="repo-wrapper">
+
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="row">
+  </footer>
+</div>
+  </body>
+
+  <script id="thumbnail" type="text/x-handlebars-template">
+  <a>
+    <img src="{{url}}">
+    <span class="dropdown-caret"></span>
+  </a>
+  </script>
+
+  <script id="user-info" type="text/x-handlebars-template">
+      <div class="profilepic" style= "background-image:url({{url}});">
+      </div>
+      <h1>{{full_name}}</h1>
+      <h3 class="bottom-border">{{username}}</h3>
+      <ul class="bottom-border">
+        <li>
+          <span aria-hidden="true" class="octicon octicon-mail" height="16" role="img" version="1.1" viewbox="0 0 14 16" width="14">
+          </span>
+          <span>{{email}}</span>
+        </li>
+        <li>
+          <span aria-hidden="true" class="octicon octicon-clock" height="16" role="img" version="1.1" viewbox="0 0 14 16" width="14">
+          </span>
+          <span> Joined on {{created_date}} </span>
+        </li>
+      </ul>
+      <div class="favorites bottom-border">
+        <div>
+          <a href="#">
+            <h1>{{followers}}</h1>
+            <span>Followers</span>
+          </a>
+        </div>
+        <div class="star-repo">
+
+        </div>
+        <div>
+          <a href="#">
+            <h1>{{following}}</h1>
+            <span>Following</span>
+          </a>
+        </div>
+      </div>
+  </script>
+
+  <script id="favorites" type="text/x-handlebars-template">
+    <a href="#">
+      <h1>{{starred}}</h1>
+    <span>Starred</span>
+    </a>
+  </script>
+
+  <script id="repositories" type="text/x-handlebars-template">
+  <div class="repositories bottom-border">
+    <div class="repo-name">
+      <a href={{repo_url}}><h1>{{full_name}}</h1></a>
+      <h5>Last updated {{updated_at}}</h5>
+    </div>
+    <div class="repo-details">
+      <span>{{lang}}</span>
+      <span class="octicon octicon-star stars"></span>{{stargazers}}
+      <span class="octicon octicon-git-branch branches"></span>{{forks}}
+    </div>
+  </div>
+  </script>
+  <script src="js/bundle.js"></script>
+</html>
