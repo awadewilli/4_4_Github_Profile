@@ -5,7 +5,7 @@ var _ = require('underscore');
 var moment = require('moment');
 var baseUrl = 'https://api.github.com';
 
-var githubtoken = require('./token.js').token;
+var githubtoken;
 //////Creates User token for ajax requests
 if(typeof(githubtoken) !== "undefined"){
   $.ajaxSetup({
