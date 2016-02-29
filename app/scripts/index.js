@@ -95,7 +95,7 @@ _.each(sortedArray.reverse(),function(data){
 });
 }
 /////////////////////////////////////////////
-$('#repo-tab').click(fetchRepoData());
+$('#repo-tab').click(fetchRepoData);
 fetchUserData();
 fetchStarredData();
 fetchThumbnail();
